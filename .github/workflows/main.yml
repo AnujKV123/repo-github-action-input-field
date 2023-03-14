@@ -7,12 +7,12 @@ on:
 
   workflow_dispatch:
     inputs:
-    num-octocats:
-      description: 'Number of Octocats'
+    inp1:
+      description: 'Please Enter String'
       required: true
-      # default: '1'
-    octocat-eye-color:
-      description: 'Eye color of the Octocats'
+      default: 'Hi Anuj How are You'
+    inp2:
+      description: 'Please Enter Number'
       required: true
 
 jobs:
