@@ -1,3 +1,3 @@
 import os
 
-print(os.environ['inps1'])
+print(os.environ['inp1'])
