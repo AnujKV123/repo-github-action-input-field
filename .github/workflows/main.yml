@@ -9,12 +9,12 @@ on:
       inputs:
         inp1:
           description: 'Please Enter First String'
-          required: true
+          required: false
           default: 'Hi'
         inp2:
           description: 'Please Second Enter String'
           default: 'Anuj'
-          required: true
+          required: false
 
 env:
   a: ${{github.event.inputs.inp1}}
