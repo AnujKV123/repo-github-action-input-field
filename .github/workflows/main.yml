@@ -6,6 +6,10 @@ on:
       inputs:
         environment:
           type: environment
+          options:
+          - aws
+          - azure
+          - gcp
           description: Select the environment
         boolean:
           type: boolean
