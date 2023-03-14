@@ -7,13 +7,13 @@ on:
 
   workflow_dispatch:
     inputs:
-      inp1:
-        description: 'Please Enter String'
-        required: true
-        default: 'Hi Anuj How are You'
-      inp2:
-        description: 'Please Enter Number'
-        required: true
+    inp1:
+      description: 'Please Enter String'
+      required: true
+      default: 'Hi Anuj How are You'
+    inp2:
+      description: 'Please Enter Number'
+      required: true
 
 jobs:
   job1:
