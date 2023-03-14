@@ -15,6 +15,10 @@ on:
           description: 'Please Enter Number'
           required: true
 
+env:
+  a: ${{github.event.inputs.inp1}}
+  b: ${{github.event.inputs.inp2}}
+
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -24,11 +28,11 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
-      - run: python programs/fprogram.py
+      - run: python programs/fprogram.py $a $b
 
       - name: success message
         # run: echo program executed successfully on ubuntu-latest!!
-        run: echo ${{ github.event.inputs.num-octocats}}
+        run: echo ${{github.event.inputs.inp1}}
   job2:
     runs-on: windows-latest
 
@@ -37,7 +41,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
-      - run: python programs/fprogram.py
+      - run: python programs/fprogram.py $a $b
 
       - name: success message
         run: Write-Output "program executed successfully on windows-latest!!"
