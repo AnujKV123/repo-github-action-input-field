@@ -10,7 +10,7 @@ on:
     num-octocats:
       description: 'Number of Octocats'
       required: true
-      default: '1'
+      # default: '1'
     octocat-eye-color:
       description: 'Eye color of the Octocats'
       required: true
