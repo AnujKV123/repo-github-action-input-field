@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
       inputs:
         inp1:
-          description: 'Please Enter String'
+          description: 'Please Enter First String'
           required: true
           default: 'Hi Anuj How are You'
         inp2:
-          description: 'Please Enter Number'
+          description: 'Please Second Enter Number'
           required: true
 
 env:

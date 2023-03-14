@@ -2,7 +2,7 @@ import sys
 
 
 def add(a, b):
-    x = a+b
+    x = a+ " " + b
     return x
 
 a = sys.argv[1]
