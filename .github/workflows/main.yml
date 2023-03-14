@@ -4,6 +4,19 @@ name: MyWorkflow
 on:
   workflow_dispatch:
       inputs:
+        environment:
+          type: environment
+          description: Select the environment
+        boolean:
+          type: boolean
+          description: True or False
+        choice:
+          type: choice
+          description: Make a choice
+          options:
+          - foo
+          - bar
+          - baz
         inp1:
           description: 'Please Enter First String'
           required: false
