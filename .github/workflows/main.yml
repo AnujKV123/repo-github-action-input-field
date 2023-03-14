@@ -1,9 +1,9 @@
 
 name: MyWorkflow
 
-on:
-  push:
-    branches: [ "main" ]
+# on:
+#   push:
+#     branches: [ "main" ]
 
   workflow_dispatch:
     inputs:
@@ -41,4 +41,4 @@ jobs:
 
       - name: success message
         # run: Write-Output "program executed successfully on windows-latest!!"
-        run: Write-Output ${{ github.event.inputs.octocat-eye-color}}
+        run: Write-Output ${{github.event.inputs.octocat-eye-color}}
